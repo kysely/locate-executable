@@ -5,7 +5,7 @@ import path from 'path'
 let list = ''
 
 const locateExecutable = (cmd, specificPath, cb = () => {}) => {
-    const callback = typeof specificPath === 'function' ? specificPath : cb
+    const callback =     typeof specificPath === 'function' ? specificPath : cb
     const searchInPath = typeof specificPath === 'string' ? specificPath : '.'
 
     const find = execFile('find', [searchInPath, '-perm', '-700', '-type', 'f'],

@@ -26,10 +26,11 @@ Looks for executable files for specified `command` in user's home directory recu
 // Example
 import locateExecutable from 'locate-executable'
 
-locateExecutable('jupyter-console', (err, paths) => {
-    if (err) return console.log(err)
+locateExecutable('jupyter-console', (error, paths) => {
+    if (error) console.log(error)
 
     console.log(paths)
+    return
 })
 ```
 
