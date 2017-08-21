@@ -1,10 +1,11 @@
 {
   "name": "locate-executable",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Locate executable files for specific commands",
   "main": "index.js",
   "scripts": {
-    "build": "babel locateExecutable.js --out-file index.js"
+    "build": "babel locateExecutable.js --out-file index.js",
+    "push": "git push -u origin master"
   },
   "repository": {
     "type": "git",

@@ -13,7 +13,7 @@ This package allows you to locate paths of executable files for such commands. Y
 npm install --save locate-executable
 ```
 
-## `locateExecutable(command[,path][,callback])`
+## `locateExecutable(command[,subpath][,callback])`
 Looks for executable files for specified `command` in user's home directory recursively. You can narrow down the search by specifying additional `subpath`.
 
 - `command` (String) Command you need the executable of
